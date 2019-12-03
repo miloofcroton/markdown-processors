@@ -1,6 +1,5 @@
 import unified from 'unified';
 import mdToMdast from 'remark-parse';
-import mdToMdxast from 'remark-mdx';
 import mdastToHast from 'remark-rehype';
 // import doc from 'rehype-document';
 // import format from 'rehype-format';
@@ -24,7 +23,6 @@ export const parser = (file) => {
   unified()
     // markdown processing
     .use(mdToMdast)
-    .use(mdToMdxast)
 
     // this is if you want <html>, <body>, and <head>
     // .use(doc)
