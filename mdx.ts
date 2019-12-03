@@ -2,7 +2,6 @@ import remark from 'remark';
 import mdxMetaData from 'remark-mdx-metadata';
 import mdToMdxast from 'remark-mdx';
 
-
 export const parserMdx = (file) => {
   let res;
 
